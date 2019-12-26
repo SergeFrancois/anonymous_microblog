@@ -1,0 +1,1 @@
+start D:\virtualenv\anonymous_microblog\Scripts\python.exe manage.py runserver

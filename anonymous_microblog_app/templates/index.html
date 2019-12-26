@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+{{ block.super }}
+<link rel="stylesheet" href='{% static "styles/index.css" %}' />
+{% endblock head %}
+{% block content %}
+<span class="header">Анонимный микроблог</span>
+<div class="posts">
+    {% for post in posts %}
+    <div class="post row">
+        <span class="timestamp col">{{ post.timestamp }}</span>
+        <div class="text col-12">{{ post.text }}</div>
+    </div>
+    {% endfor %}
+</div>
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="form">
+        {{ post_form }}
+    </div>
+    <button type="submit" class="btn"><i class="fa fa-send"></i></button>
+</form>
+{% endblock content %}

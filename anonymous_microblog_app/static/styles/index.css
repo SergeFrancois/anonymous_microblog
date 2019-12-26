@@ -1,0 +1,48 @@
+.header {
+    color: #f00;
+    display: block;
+    font-size: 3em;
+    font-weight: 500;
+    padding: 0.5em 0;
+    text-align: center;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+
+.posts {
+    background-color: #fff9;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    margin: 1em 0;
+    padding: 0.5em;
+}
+
+
+.post {
+    margin: 1em 0;
+}
+
+.post .timestamp {
+    color: #777;
+    font-size: 0.75em;
+    text-align: right;
+}
+
+.post .text {
+    color: #f00;
+    font-size: 1em;
+}
+
+
+.form>label {
+    display: none;
+}
+
+.form>textarea {
+    display: block;
+    width: 100%;
+    border-radius: 0.5em;
+    margin: 0.5em 0px;
+    height: 103px;
+    padding: 0.5em;
+}
